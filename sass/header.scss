@@ -1,0 +1,57 @@
+header {
+  background-image: url(https://w0.peakpx.com/wallpaper/649/934/HD-wallpaper-block-shading-block-3d-shading-abstract-dual-monitor-backgrounds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  .header {
+    h1 {
+      margin: 0;
+    }
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: baseline;
+    .button {
+      background-color: var(--color-secondary);
+    }
+    span{
+      margin: 15px 0;
+      font-size: 0.8rem;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fa-solid {
+      margin-left: 10px;
+      background-color: #efefef;
+      border-radius: 50%;
+      padding: 10px;
+      color: black;
+    }
+    .fa-play {
+      background-color: var(--color-primary);
+      padding: 30px;
+      border-radius: 50%;
+      color: white;
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      .avatar {
+        height: 25px;
+        width: 25px;
+      }
+      .followers {
+        padding:  0 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

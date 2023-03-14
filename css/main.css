@@ -1,0 +1,137 @@
+main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 50px 40% 1fr;
+  flex: 1;
+}
+main .toolbar {
+  background-color: var(--second-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .toolbar > a {
+  margin-left: 10px;
+  color: white;
+}
+main .toolbar > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .toolbar input {
+  background-color: transparent;
+  border: 1px solid #2d2d2d;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+main .toolbar input:focus {
+  outline-color: var(--color-text-muted);
+  outline: none !important;
+  border-color: var(--color-text-muted);
+  box-shadow: 0 0 10px var(--color-text-muted);
+}
+main .toolbar ::placeholder {
+  color: var(--color-text-muted);
+}
+main .toolbar button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-muted);
+}
+main .toolbar .spacer {
+  padding: 0 50px;
+}
+main .toolbar .notification {
+  margin: 0 10px;
+}
+main .toolbar .notification i {
+  position: relative;
+}
+main .toolbar .notification i::after {
+  display: block;
+  content: " ";
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  top: -1px;
+  right: -1px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--main-bg-color);
+}
+main .toolbar .avatar {
+  margin: 0 10px;
+}
+main section {
+  overflow-y: scroll;
+  max-width: 100%;
+}
+main .songs .song {
+  border-bottom: 1px solid #313131;
+  border-top: 1px solid #313131;
+  margin-bottom: 10px;
+  color: var(--color-text-muted);
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 15%);
+}
+main .songs .song > * {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+main .songs .song > :last-child {
+  display: flex;
+  justify-content: space-around;
+}
+main .songs .song .title {
+  color: white;
+  display: flex;
+}
+main .songs .song .title .control {
+  align-self: center;
+  margin: 0 20px;
+}
+main .songs .song .title .control .fa-solid {
+  padding: 15px;
+}
+main .songs .song .title .details {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  flex: 1;
+  flex-direction: column;
+  text-align: start;
+}
+main .songs .song .title .details .name {
+  margin: 0;
+}
+main .songs .song:hover {
+  background-color: black;
+  cursor: pointer;
+}
+main .songs .song.active {
+  background-color: black;
+}
+main .songs .song.active .title .fa-solid {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+main .songs .header {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 15%);
+}
+main .songs .header span {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .songs .header span:first-child {
+  text-align: start;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+footer {
+  border-top: 1px solid #2d2d2d;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+footer .album {
+  display: flex;
+  align-items: center;
+}
+footer .album .details {
+  font-size: 0.8rem;
+  margin: 0 10px;
+}
+footer .album .details > * {
+  margin: 0;
+}
+footer .controls {
+  padding: 0 20px;
+  font-size: 0.8rem;
+}
+footer .controls .fa-play {
+  border: 1px solid snow;
+  border-radius: 50%;
+}
+footer .controls i {
+  padding: 10px;
+}
+footer .duration {
+  padding: 0 30px;
+  display: flex;
+  flex: 1;
+  font-size: 0.8rem;
+}
+footer .duration .progress {
+  margin: 0 20px;
+}
+footer .volume {
+  display: flex;
+  width: 150px;
+}
+footer .volume .progress {
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=footer.css.map */

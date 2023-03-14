@@ -1,0 +1,55 @@
+nav {
+  grid-row: 1/4;
+}
+nav .header {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .header .title {
+  padding: 10px 0;
+}
+nav .header .button {
+  background-color: var(--color-primary);
+}
+nav ul {
+  margin: 0;
+  padding: 50px;
+  padding-bottom: 0;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+nav ul li:not(.active) {
+  color: var(--color-text-muted);
+}
+nav ul li:hover, nav ul li.active {
+  background-color: var(--active-bg-color);
+  color: white;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+nav ul li i {
+  margin-right: 5px;
+}
+nav .account {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 0;
+}
+nav .account a {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+nav .account a:hover {
+  background-color: var(--active-bg-color);
+  color: white;
+}
+
+/*# sourceMappingURL=nav.css.map */

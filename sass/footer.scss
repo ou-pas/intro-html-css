@@ -1,0 +1,45 @@
+
+footer {
+  border-top: 1px solid #2d2d2d;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  .album {
+    display: flex;
+    align-items: center;
+    .details {
+      font-size: 0.8rem;
+      margin:  0 10px;
+      > * {
+        margin: 0;
+      }
+    }
+  }
+  .controls {
+    padding: 0 20px;
+    font-size: 0.8rem;
+    .fa-play {
+      border: 1px solid snow;
+      border-radius: 50%;
+    }
+    i {
+      padding: 10px;
+    }
+  }
+  .duration {
+    padding: 0 30px;
+    display: flex;
+    flex: 1;
+    font-size: 0.8rem;
+    .progress {
+      margin: 0 20px;
+    }
+  }
+  .volume {
+    display: flex;
+    width: 150px;
+    .progress {
+      margin: 0 10px;
+    }
+  }
+}

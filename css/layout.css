@@ -1,0 +1,33 @@
+:root {
+  --main-bg-color: rgb(16,16,19);
+  --second-bg-color: rgb(0,0,0);
+  --active-bg-color: rgb(0,0,0);
+  --color-primary: rgb(56,66,191);
+  --color-secondary: var(--main-bg-color);
+  --color-text-muted: #828282;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Raleway;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+body {
+  color: white;
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/*# sourceMappingURL=layout.css.map */
